@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Audio Player</title>
+		<style>
+			body{
+				margin:100px auto;
+				text-align: center;
+                border:1px solid #524983;
+                border-radius:2px;
+                width:70%;
+                color:#524983;
+			}
+		</style>
+	</head>
+    <body>
+        <div>
+        <audio controls id="audioTrack">
+            <source id="mp3src" src="audio\Without-You.mp3" type="audio/mpeg"></source>
+        </audio>
+        <div id="dashboard">
+                <input type="button" value="Repeat" class="control-btn" id="loop">
+                <input type="button" value="Shuffle" class="control-btn" id="shuffle">
+                <input type="button" value="Play List" class="control-btn" id="play">
+        </div>
+        <ul id="musicList" style="list-style-type: none;" >
+            <li> <p id="song1" data-value="Without-You" >Without-You</p> </li>
+            <li> <p id="song2" data-value="Swan-Song" >Swan-Song</p> </li>
+            <li> <p id="song3" data-value="Sign of the time">Sign of the time</p> </li>
+            <li> <p id="song4" data-value="Birds">Lele Pons</p> </li>
+            <li> <p id="song5" data-value="Scared-to-be-lonely">Scared to be lonely</p> </li>
+        </ul>
+       
+    </div>
+    <script src="AudioMiniPlayer.js"></script>        
+</body>
+</html>
